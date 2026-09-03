@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sales & Profit Analytics Dashboard — Rizwan Baig</title>
+  <meta name="description" content="Flagship Power BI case study: Sales & Profit Analytics. Star schema, 12 DAX measures, YoY & margin analysis.">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="../../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/professional.css">
+  <style>
+    .case-hero{ background: white; border-bottom:1px solid var(--border); padding: 36px 0 28px; }
+    .breadcrumb{ background:none; padding:0; margin-bottom:12px; font-size:12px; }
+    .breadcrumb a{ color:var(--muted); }
+    .toc{ position:sticky; top:84px; background:white; border:1px solid var(--border); border-radius:12px; padding:16px; }
+    .toc a{ display:block; font-size:13px; font-weight:500; color:var(--text-2); padding:6px 0; border-bottom:1px solid var(--border); text-decoration:none; }
+    .toc a:last-child{ border:none; }
+    .toc a:hover{ color:var(--accent); }
+    .kpi-grid{ display:grid; grid-template-columns: repeat(4,1fr); gap:12px; }
+    @media(max-width:700px){ .kpi-grid{ grid-template-columns: repeat(2,1fr); } }
+    .kpi{ background:white; border:1px solid var(--border); border-radius:12px; padding:16px; }
+    .kpi .kpi-label{ font-size:11px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); }
+    .kpi .kpi-value{ font-size:22px; font-weight:800; color:var(--navy); margin-top:4px; }
+    .kpi .kpi-delta{ font-size:12px; color:var(--accent); font-weight:600; }
+    .shot{ background:white; border:1px solid var(--border); border-radius:12px; overflow:hidden; }
+    .shot img{ width:100%; aspect-ratio:16/10; object-fit:cover; }
+    .shot .cap{ padding:10px 14px; font-size:12px; color:var(--muted); border-top:1px solid var(--border); }
+  </style>
+</head>
+<body>
+  <nav class="pro-nav">
+    <div class="nav-inner">
+      <a class="brand" href="../../"><span class="brand-mark">RB</span> Rizwan Baig</a>
+      <div class="nav-links">
+        <a href="../../#projects">← Back to Portfolio</a>
+        <a href="#overview" class="active">Overview</a>
+        <a href="#powerbi">Dashboard</a>
+        <a href="#insights">Insights</a>
+      </div>
+      <a href="../../#contact" class="nav-cta">Contact</a>
+    </div>
+  </nav>
+
+  <section class="case-hero">
+    <div class="container-pro">
+      <nav aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../">Portfolio</a></li><li class="breadcrumb-item"><a href="../../#projects">Projects</a></li><li class="breadcrumb-item active">Sales & Profit Dashboard</li></ol></nav>
+      <span class="eyebrow"><i class="fa-solid fa-star"></i> Flagship • Power BI • SQL • DAX</span>
+      <h1 style="font-size:32px; font-weight:800; letter-spacing:-.02em; color:var(--navy); margin:12px 0 10px;">Sales & Profit Analytics Dashboard</h1>
+      <p style="max-width:68ch; color:var(--text-2); font-size:15px; line-height:1.6;">One dashboard that answers: are we growing profitably, where does margin leak, and what should we do next quarter. Built on a star schema with 12 DAX measures and SQL-validated KPIs.</p>
+      <div style="display:flex; flex-wrap:wrap; gap:8px; margin-top:14px;">
+        <span class="pill accent"><i class="fa-solid fa-database"></i> SQL — window functions, CTEs</span>
+        <span class="pill accent"><i class="fa-solid fa-chart-column"></i> Power BI — DAX, Power Query</span>
+        <span class="pill"><i class="fa-solid fa-diagram-project"></i> Star Schema</span>
+        <span class="pill"><i class="fa-solid fa-calculator"></i> Margin %, YoY, YTD</span>
+      </div>
+      <div style="display:flex; gap:10px; margin-top:18px; flex-wrap:wrap;">
+        <a href="#powerbi" class="btn-primary-pro"><i class="fa-solid fa-expand"></i> View Dashboard</a>
+        <a href="https://github.com/rizz1406" target="_blank" rel="noopener" class="btn-secondary-pro"><i class="fa-brands fa-github"></i> Repo (private until publish)</a>
+        <a href="../sales-profit-dashboard/exports/sales_profit_dashboard.pdf" class="btn-secondary-pro"><i class="fa-solid fa-file-pdf"></i> PDF Export</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="pro-section" id="overview">
+    <div class="container-pro">
+      <div style="display:grid; grid-template-columns: 220px 1fr; gap:28px;">
+        <aside class="d-none d-md-block">
+          <div class="toc">
+            <div style="font-size:11px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); margin-bottom:8px;">On this page</div>
+            <a href="#overview">KPIs & Goals</a>
+            <a href="#model">Data Model</a>
+            <a href="#powerbi">Dashboard</a>
+            <a href="#sql">SQL</a>
+            <a href="#insights">Insights</a>
+            <a href="#docs">Docs</a>
+          </div>
+        </aside>
+        <div>
+          <div class="kpi-grid">
+            <div class="kpi"><div class="kpi-label">Total Sales</div><div class="kpi-value mono">$2.34M</div><div class="kpi-delta">↑ 12.4% YoY</div></div>
+            <div class="kpi"><div class="kpi-label">Total Profit</div><div class="kpi-value mono">$286K</div><div class="kpi-delta">↑ 8.1% YoY</div></div>
+            <div class="kpi"><div class="kpi-label">Margin %</div><div class="kpi-value mono">12.2%</div><div class="kpi-delta" style="color:#b45309;">↓ 0.6 pts YoY</div></div>
+            <div class="kpi"><div class="kpi-label">Orders</div><div class="kpi-value mono">5,009</div><div class="kpi-delta">AOV $467</div></div>
+          </div>
+
+          <div style="margin-top:28px;" id="model">
+            <h3 style="font-size:18px; font-weight:700; color:var(--navy);">Star schema & DAX</h3>
+            <p style="font-size:14px; color:var(--muted);">FactSales (grain: order + product) → DimDate / DimProduct / DimCustomer / DimGeography. 12 measures cover Sales, Profit, Margin %, YTD, YoY. See <a href="docs/data-model.md">data-model.md</a> and <a href="docs/dax-measures.md">dax-measures.md</a>.</p>
+            <div style="background:white; border:1px solid var(--border); border-radius:12px; padding:14px; overflow:auto; font-size:12px;" class="mono">
+              DimDate — DimProduct — DimCustomer — DimGeography —↘︎ FactSales ← Measures: Total Sales, Total Profit, Margin %, Sales YoY %, Profit YTD...
+            </div>
+          </div>
+
+          <div style="margin-top:28px;" id="powerbi">
+            <h3 style="font-size:18px; font-weight:700; color:var(--navy);">Dashboard</h3>
+            <p style="font-size:14px; color:var(--muted);">Power BI Desktop file in <code>powerbi/sales-profit-dashboard.pbix</code>. Theme <code>theme.json</code> matches portfolio (slate + teal). Screenshots below are exports; iframe embed is optional via Power BI Service publish-to-web.</p>
+            <div class="shot" style="margin-top:12px;">
+              <img src="../../images/proj_3.jpg" alt="Dashboard Overview — placeholder, replace with screenshots/dashboard-overview.png">
+              <div class="cap">Overview page — KPI cards + sales vs profit trend + region/category slicers. Replace with <code>screenshots/dashboard-overview.png</code> after export.</div>
+            </div>
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:12px;">
+              <div class="shot"><img src="../../images/proj_2.jpg" alt="Sales by region"><div class="cap">Sales by Region</div></div>
+              <div class="shot"><img src="../../images/proj_1.jpg" alt="Profit by category"><div class="cap">Profit by Category & Margin</div></div>
+            </div>
+            <div style="margin-top:14px; background:#f8fafc; border:1px dashed var(--border); border-radius:12px; padding:14px; font-size:13px; color:var(--muted);">
+              <strong style="color:var(--text);">To embed live:</strong> Publish .pbix to Power BI Service → File → Embed → Publish to web → paste iframe here. Keep screenshots as fallback (recruiters often block iframes).
+            </div>
+          </div>
+
+          <div style="margin-top:28px;" id="sql">
+            <h3 style="font-size:18px; font-weight:700; color:var(--navy);">SQL — validation layer</h3>
+            <p style="font-size:14px; color:var(--muted);">All KPIs are first validated in SQL before DAX. See <code>sql/02_kpi_queries.sql</code> and <code>sql/03_advanced_analysis.sql</code>.</p>
+            <pre style="background:#0f172a; color:#e2e8f0; border-radius:12px; padding:14px; overflow:auto; font-size:12px;"><code>-- YoY example
+WITH monthly AS (
+  SELECT date_trunc('month', order_date) AS m, SUM(sales) AS sales
+  FROM fact_sales GROUP BY 1
+)
+SELECT m, sales,
+  LAG(sales,12) OVER (ORDER BY m) AS last_year,
+  (sales - LAG(sales,12) OVER (ORDER BY m)) / NULLIF(LAG(sales,12) OVER (ORDER BY m),0) AS yoy_pct
+FROM monthly;</code></pre>
+          </div>
+
+          <div style="margin-top:28px;" id="insights">
+            <h3 style="font-size:18px; font-weight:700; color:var(--navy);">Insights & Recommendations</h3>
+            <ul style="font-size:14px; color:var(--text-2); line-height:1.7;">
+              <li><strong>West leads profit, Central leaks margin</strong> — Central margin -4.2 pts vs avg despite 22% of sales.</li>
+              <li><strong>Furniture discounts >20% destroy profit</strong> on 12% of orders; Technology holds 16.8% margin.</li>
+              <li><strong>Top 10 customers = 18% profit</strong> — retention risk, need personalized play not blanket discount.</li>
+              <li><strong>Q4 volume up, margin down</strong> — holiday discounting; Q1 is most profitable per dollar.</li>
+            </ul>
+            <div style="margin-top:12px; display:flex; gap:8px; flex-wrap:wrap;">
+              <a href="docs/insights-and-recommendations.md" class="btn-secondary-pro" style="font-size:13px;">Read full insights →</a>
+              <a href="docs/business-requirements.md" class="btn-secondary-pro" style="font-size:13px;">Business requirements</a>
+            </div>
+          </div>
+
+          <div style="margin-top:28px;" id="docs">
+            <h3 style="font-size:18px; font-weight:700; color:var(--navy);">Docs & Data</h3>
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px; font-size:13px;">
+              <a href="docs/business-requirements.md" style="background:white; border:1px solid var(--border); border-radius:10px; padding:12px; text-decoration:none; color:var(--text);">📄 business-requirements.md</a>
+              <a href="docs/data-dictionary.md" style="background:white; border:1px solid var(--border); border-radius:10px; padding:12px; text-decoration:none; color:var(--text);">📘 data-dictionary.md</a>
+              <a href="docs/data-model.md" style="background:white; border:1px solid var(--border); border-radius:10px; padding:12px; text-decoration:none; color:var(--text);">🧱 data-model.md</a>
+              <a href="docs/dax-measures.md" style="background:white; border:1px solid var(--border); border-radius:10px; padding:12px; text-decoration:none; color:var(--text);">🧮 dax-measures.md</a>
+              <a href="sql/02_kpi_queries.sql" style="background:white; border:1px solid var(--border); border-radius:10px; padding:12px; text-decoration:none; color:var(--text);">🔍 sql/02_kpi_queries.sql</a>
+              <a href="data/processed/sales_cleaned.csv" style="background:white; border:1px solid var(--border); border-radius:10px; padding:12px; text-decoration:none; color:var(--text);">📊 data/processed/sales_cleaned.csv</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="pro-footer">
+    <div class="footer-inner">
+      <p>© <script>document.write(new Date().getFullYear())</script> Rizwan Baig — <a href="../../">Back to portfolio</a></p>
+      <div class="socials">
+        <a href="https://github.com/rizz1406" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/rizwanbaig001/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

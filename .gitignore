@@ -1,0 +1,24 @@
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Power BI large files — prefer external link or LFS if >50MB
+*.pbix
+!projects/sales-profit-dashboard/powerbi/theme.json
+!projects/sales-profit-dashboard/powerbi/power-query-m.md
+
+# Data — keep sample only in repo
+projects/sales-profit-dashboard/data/raw/*.csv
+!projects/sales-profit-dashboard/data/processed/sales_cleaned.csv
+*.tmp
+
+# Prepros
+prepros-6.config
+prepros.config

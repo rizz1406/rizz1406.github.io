@@ -1,0 +1,7 @@
+Order ID,Order Date,Ship Date,Ship Mode,Customer ID,Customer Name,Segment,Country,Region,State,City,Category,Sub-Category,Product Name,Sales,Quantity,Discount,Profit
+CA-2019-100006,2019-01-06,2019-01-10,Standard Class,CG-12520,Claire Gute,Consumer,United States,West,California,Los Angeles,Technology,Phones,iPhone 13,1200.00,2,0.00,360.00
+CA-2019-100090,2019-02-15,2019-02-18,Second Class,DV-13045,Darrin Van Huff,Corporate,United States,Central,Texas,Houston,Furniture,Chairs,Ergonomic Chair,850.50,3,0.10,85.05
+CA-2020-110412,2020-06-22,2020-06-26,Standard Class,SO-20335,Sean O'Donnell,Consumer,United States,South,Florida,Miami,Office Supplies,Binders,Classic Binder,45.20,5,0.20,6.78
+CA-2021-130091,2021-09-03,2021-09-03,Same Day,BH-11710,Brosina Hoffman,Consumer,United States,West,Washington,Seattle,Technology,Accessories,Wireless Mouse,35.99,4,0.00,12.60
+CA-2022-145678,2022-11-18,2022-11-22,First Class,AA-10480,Andrew Allen,Corporate,United States,East,New York,New York,Furniture,Tables,Conference Table,2200.00,1,0.15,220.00
+CA-2023-152580,2023-03-12,2023-03-15,Standard Class,IM-15070,Irene Maddox,Home Office,United States,Central,Illinois,Chicago,Office Supplies,Paper,Copy Paper Pack,120.00,10,0.00,54.00

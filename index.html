@@ -53,34 +53,38 @@
           <a href="https://drive.google.com/uc?export=download&id=1IJpdyp8raIT2Bq-X567glrR4Uj1juJTe" class="btn-secondary-pro"><i class="fa-solid fa-file-arrow-down"></i> Download Resume</a>
           <a href="https://www.linkedin.com/in/rizwanbaig001/" target="_blank" rel="noopener" class="btn-secondary-pro" style="padding:12px 16px;"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
         </div>
-        <div class="hero-proof">
-          <div class="proof-item">
-            <div style="width:36px; height:36px; border-radius:8px; background:var(--accent-soft); color:var(--accent); display:grid; place-items:center;"><i class="fa-solid fa-diagram-project"></i></div>
-            <div><div class="proof-num mono">4</div><div class="proof-label">Projects shipped</div></div>
+        <div class="hero-services" style="display:grid; grid-template-columns: repeat(3,1fr); gap:10px; padding-top:18px; border-top:1px solid var(--border);">
+          <div style="background:white; border:1px solid var(--border); border-radius:12px; padding:12px;">
+            <div style="font-size:10px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:var(--muted);">01 — GAM Forecasting</div>
+            <div style="font-size:12.5px; font-weight:700; color:var(--navy); margin:5px 0 4px;">Automated Inventory Pipeline</div>
+            <div style="font-size:11.5px; color:var(--muted); line-height:1.5;">Replaced manual GAM reporting → production (DataBeat/TIME).</div>
           </div>
-          <div class="proof-item">
-            <div style="width:36px; height:36px; border-radius:8px; background:#fef3c7; color:#b45309; display:grid; place-items:center;"><i class="fa-solid fa-briefcase"></i></div>
-            <div><div class="proof-num mono">1+</div><div class="proof-label">Years — DataBeat (TIME)</div></div>
+          <div style="background:white; border:1px solid var(--border); border-radius:12px; padding:12px;">
+            <div style="font-size:10px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:var(--muted);">02 — GA4 ↔ GAM ↔ BQ</div>
+            <div style="font-size:12.5px; font-weight:700; color:var(--navy); margin:5px 0 4px;">Reconciliation & QA</div>
+            <div style="font-size:11.5px; color:var(--muted); line-height:1.5;">Fix reporting gaps across GA4, GAM, BigQuery — Python checks.</div>
           </div>
-          <div class="proof-item">
-            <div style="width:36px; height:36px; border-radius:8px; background:#dbeafe; color:#1d4ed8; display:grid; place-items:center;"><i class="fa-solid fa-toolbox"></i></div>
-            <div><div class="proof-num mono">6+</div><div class="proof-label">Tools — BigQuery, GA4, GAM</div></div>
+          <div style="background:white; border:1px solid var(--border); border-radius:12px; padding:12px;">
+            <div style="font-size:10px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:var(--muted);">03 — BigQuery Cost</div>
+            <div style="font-size:12.5px; font-weight:700; color:var(--navy); margin:5px 0 4px;">Partitioning & Tuning</div>
+            <div style="font-size:11.5px; color:var(--muted); line-height:1.5;">CTE refactor + clustering. Lower cost, faster dashboards.</div>
           </div>
         </div>
+        <style>@media(max-width: 700px){ .hero-services{ grid-template-columns:1fr !important; } }</style>
       </div>
 
       <div class="hero-preview reveal in" style="transition-delay:.08s">
         <div class="preview-bar">
           <span class="dot" style="background:#ef4444"></span><span class="dot" style="background:#f59e0b"></span><span class="dot" style="background:#22c55e"></span>
           <span style="margin-left:8px; font-size:12px; font-weight:600; color:var(--muted);">sales-profit-dashboard.pbix — Overview</span>
-          <span style="margin-left:auto; font-size:11px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:var(--accent); background:var(--accent-soft); border:1px solid #99f6e4; padding:4px 8px; border-radius:999px;">Featured</span>
+          <span style="margin-left:auto; font-size:10px; font-weight:600; letter-spacing:.06em; text-transform:uppercase; color:var(--muted); background:white; border:1px solid var(--border); padding:4px 8px; border-radius:999px;">Case Study • Live GIF</span>
         </div>
-        <img class="preview-img" src="images/proj_3.jpg" alt="Sales & Profit Dashboard preview — Power BI" loading="eager">
-        <div class="floating-kpi">
-          <div class="kpi-icon"><i class="fa-solid fa-arrow-trend-up"></i></div>
+        <img class="preview-img" src="images/proj_3.jpg" alt="Sales & Profit Dashboard preview — Power BI (replace with GIF after publish)" loading="eager" style="opacity:.98;">
+        <div class="floating-kpi" style="left:10px; bottom:10px; padding:8px 10px; gap:8px; max-width: 200px; border-radius:10px;">
+          <div class="kpi-icon" style="width:28px; height:28px; border-radius:6px; font-size:12px;"><i class="fa-solid fa-play"></i></div>
           <div>
-            <div class="kpi-value mono">+18.4% Margin</div>
-            <div class="kpi-sub">YoY • West region leading</div>
+            <div class="kpi-value mono" style="font-size:12px;">Play 18s demo</div>
+            <div class="kpi-sub" style="font-size:10px;">GIF after Publish to Web →</div>
           </div>
         </div>
       </div>

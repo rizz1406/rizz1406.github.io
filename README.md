@@ -2,45 +2,37 @@
 
 Live: **https://rizz1406.github.io/**
 
-Data Analyst at **DataBeat (Client: TIME)** — Hyderabad. 1+ year owning the analytics reporting stack for a major digital media client. BigQuery, advanced SQL (window functions, CTEs, partitioning/clustering), GA4, GAM, Looker Studio, Power BI, Python.
+This portfolio presents production analytics work, verified credentials, and independently shipped web products. It uses public-safe descriptions of client work and does not publish client data, internal schemas, or commercial metrics.
 
-## Summary
-Data Analyst with 1+ year of production experience building and owning the analytics reporting stack for a major digital media client. Skilled in BigQuery, advanced SQL, Google Analytics (GA4), Google Ad Manager (GAM), and Looker Studio, with hands-on delivery of end-to-end ETL pipelines, automated reporting, and query optimization.
+## Profile
 
-## Experience
-- **Data Analyst — DataBeat (Client: TIME)** — 2025–Present, Hyderabad
-  - Automated GAM inventory-forecasting pipeline (production)
-  - Owned dashboards, BigQuery datasets, ETL pipelines (dev → QA → deploy → monitor)
-  - Production SQL across Bronze/Silver/Gold DWH; resolved GA4/GAM/BigQuery discrepancies
-  - Partitioning/clustering/CTE refactoring for cost & speed
-  - Python + AI tooling for QA automation
+Data Analyst at **DataBeat**, supporting a major digital media client from Hyderabad. I build and own reporting workflows using BigQuery, advanced SQL, GA4, Google Ad Manager, Looker Studio, Power BI, and Python.
 
-- **Data Researcher Intern — Collegedunia** — Dec 2024–2025, Remote
-  - LaTeX solution PDFs + educational data validation at 95% accuracy
+## Featured work
 
-## Projects
-- **Superstore Sales Analysis and Forecasting** — SQL, Power BI (Dec 2024) — [GitHub](https://github.com/rizz1406/Superstore-Sales-Analysis) — also expanded as [Sales & Profit Dashboard case study](projects/sales-profit-dashboard/)
-- **Galaxy Store Sales Analysis** — Excel (Feb 2024) — [GitHub](https://github.com/rizz1406/My-Galaxy-Store-Sales-Analysis)
+- [Automated GAM inventory forecasting](work/gam-forecasting.html) — a public-safe case study of a production workflow that replaced manual inventory reporting.
+- [Cross-platform analytics reconciliation](work/analytics-reconciliation.html) — a public-safe case study on investigating reporting differences across GA4, GAM, Parse.ly, and BigQuery.
 
-## Skills
-- **Databases & SQL:** BigQuery, window functions, CTEs, partitioning, clustering, multi-layer DWH
-- **AdTech & Analytics:** GA4, GAM, Parse.ly, Marfeel
-- **Visualization:** Looker Studio, Power BI, Excel, Google Sheets
-- **Programming:** Python (API integration, QA automation), SQL
-- **Cloud & Practices:** GCP, ETL design, data QA, monitoring & alerting, AI-assisted workflows
+## Independent products
 
-## Tech (site)
-HTML, CSS (Inter, professional.css), Bootstrap grid, Font Awesome, vanilla JS — no jQuery bounce animations.
+- [ResumeAI — Resume Tailor](https://resume-tailor.vercel.app/)
+- [Pulse — Health Tracker](https://pulse-v24w.onrender.com)
+- [Dopamine — Daily Arcade](https://dopamine.rizwanmirza95551.workers.dev/)
+
+## Credentials
+
+- [Drive Advertising Revenue with Google Ad Manager](https://skillshop.credential.net/c2c7578c-dc32-4b31-8ff0-8d58fc3fed59#acc.NsFWmVTl)
+- [Databricks Certified Data Engineer Associate](https://credentials.databricks.com/ee9ab034-f9b9-4f25-ae76-005981614c88#acc.IYhsuiRg)
 
 ## Run locally
+
 ```bash
-git clone https://github.com/rizz1406/rizz1406.github.io.git
-cd rizz1406.github.io
 python -m http.server 8000
 # http://localhost:8000
 ```
 
 ## Connect
-- LinkedIn: https://www.linkedin.com/in/rizwanbaig001/
-- GitHub: https://github.com/rizz1406
-- Email: rizwanmirza95551@gmail.com
+
+- [LinkedIn](https://www.linkedin.com/in/rizwanbaig001/)
+- [GitHub](https://github.com/rizz1406)
+- rizwanmirza95551@gmail.com

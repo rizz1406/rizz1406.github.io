@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A public-safe overview of Rizwan Baig's cross-platform analytics reconciliation work.">
+  <title>Analytics reconciliation — Rizwan Baig</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/professional.css">
+  <link rel="stylesheet" href="../css/readability.css">
+  <link rel="stylesheet" href="case-study.css">
+</head>
+<body>
+  <header class="case-header"><div class="case-wrap"><a class="brand" href="../index.html">Rizwan Baig<span>.</span></a><a class="back-link" href="../index.html#work">← Back to portfolio</a></div></header>
+  <main>
+    <section class="case-hero"><div class="case-wrap"><p class="eyebrow">Public-safe case study · DataBeat</p><h1>Cross-platform analytics reconciliation</h1><p class="case-lead">A structured approach to investigating reporting differences across GA4, Google Ad Manager, Parse.ly, and BigQuery.</p><div class="case-tags"><span>GA4</span><span>Google Ad Manager</span><span>BigQuery</span><span>Python</span><span>Data QA</span></div></div></section>
+    <section class="case-wrap case-content">
+      <div class="case-side"><p class="eyebrow">My role</p><p>Data Analyst</p><p class="eyebrow">Scope</p><p>Data quality and reporting</p><p class="eyebrow">Status</p><p>Ongoing practice</p></div>
+      <div>
+        <article class="case-section"><p class="eyebrow">Challenge</p><h2>Different tools can legitimately report different numbers.</h2><p>Digital analytics platforms measure data at different times and through different definitions. When stakeholders need trusted reporting, those differences must be investigated, documented, and resolved where appropriate.</p></article>
+        <article class="case-section"><p class="eyebrow">Approach</p><h2>Trace a discrepancy from definition to source data.</h2><div class="steps"><div><b>01</b><h3>Align the question</h3><p>Confirm the reporting period, metric definition, filters, and expected source of truth.</p></div><div><b>02</b><h3>Compare the data path</h3><p>Use SQL and platform-level checks to trace data from source systems through BigQuery datasets and reports.</p></div><div><b>03</b><h3>Validate the fix</h3><p>Apply QA checks and automation where useful, then communicate the reason for the difference clearly.</p></div></div></article>
+        <article class="case-section"><p class="eyebrow">Outcome</p><h2>More confidence in cross-platform reporting.</h2><p>This work helps maintain trusted reporting across the analytics stack by turning unexplained differences into testable data-quality questions. Client data, internal schemas, and results are intentionally not published.</p></article>
+        <aside class="confidentiality"><strong>What this shows</strong><p>Analytics engineering judgment: precise metric definitions, systematic debugging, and clear QA practices across a production reporting stack.</p></aside>
+      </div>
+    </section>
+  </main>
+  <footer><div class="case-wrap"><span>© <span id="year"></span> Rizwan Baig</span></div></footer>
+  <script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+</body>
+</html>

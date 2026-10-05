@@ -24,6 +24,11 @@ Data Analyst at **DataBeat**, supporting a major digital media client from Hyder
 - [Drive Advertising Revenue with Google Ad Manager](https://skillshop.credential.net/c2c7578c-dc32-4b31-8ff0-8d58fc3fed59#acc.NsFWmVTl)
 - [Databricks Certified Data Engineer Associate](https://credentials.databricks.com/ee9ab034-f9b9-4f25-ae76-005981614c88#acc.IYhsuiRg)
 
+## Résumé
+
+- [Download PDF](resume/rizwan-baig-resume.pdf)
+- [Editable LaTeX source](resume/rizwan-baig-resume.tex)
+
 ## Run locally
 
 ```bash

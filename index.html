@@ -1,397 +1,116 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Rizwan Baig — Data Analyst at DataBeat (Client: TIME). BigQuery, SQL, GA4, GAM, Looker Studio, Power BI. Hyderabad, India.">
-  <meta property="og:title" content="Rizwan Baig — Data Analyst | DataBeat (TIME)">
-  <meta property="og:description" content="Data Analyst • DataBeat (TIME) — BigQuery • GA4 • GAM • Looker Studio • Power BI">
-  <title>Rizwan Baig — Data Analyst | DataBeat (TIME)</title>
-
+  <meta name="description" content="Rizwan Baig — Data Analyst specialising in data engineering, business intelligence, BigQuery, SQL, GA4 and GAM.">
+  <meta property="og:title" content="Rizwan Baig — Data Analyst">
+  <meta property="og:description" content="Data Engineering · Analytics Engineering · Business Intelligence">
+  <title>Rizwan Baig — Data Analyst</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="stylesheet" href="css/professional.css">
-  <link rel="icon" href="images/about-me.png">
+  <link rel="stylesheet" href="css/motion.css">
+  <link rel="stylesheet" href="css/logos.css">
 </head>
 <body>
-
-  <!-- NAV -->
-  <nav class="pro-nav" id="top">
-    <div class="nav-inner">
-      <a class="brand" href="#top" aria-label="Home">
-        <span class="brand-mark">RB</span>
-        Rizwan Baig
-        <span style="font-weight:500; color:var(--muted); font-size:12px; margin-left:6px; display:none;" class="d-none d-lg-inline">Data Analyst — DataBeat (TIME)</span>
-      </a>
-      <div class="nav-links" id="navLinks">
-        <a href="#about" class="active">About</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#products">Products</a>
-        <a href="#contact">Contact</a>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="container nav" aria-label="Primary navigation">
+      <a class="brand" href="#top">Rizwan Baig<span>.</span></a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+      <div class="nav-links">
+        <a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#work">Work</a><a href="#credentials">Credentials</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+        <a class="resume-link" href="https://drive.google.com/uc?export=download&id=1IJpdyp8raIT2Bq-X567glrR4Uj1juJTe">Download résumé</a>
       </div>
-      <div style="display:flex; gap:10px; align-items:center;">
-        <a href="projects/sales-profit-dashboard/" class="nav-cta nav-cta--desktop">View Dashboards <i class="fa-solid fa-arrow-right" style="font-size:12px;"></i></a>
-        <a href="https://github.com/rizz1406" target="_blank" rel="noopener" class="nav-cta" style="background:white; color:var(--text); border:1px solid var(--border); padding:10px 14px;" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-        <button class="menu-btn" id="menuBtn" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
-      </div>
-    </div>
-  </nav>
+    </nav>
+  </header>
 
-  <!-- HERO -->
-  <section class="pro-hero">
-    <div class="hero-grid">
-      <div class="hero-copy reveal in">
-        <span class="eyebrow"><i class="fa-solid fa-chart-line"></i> BigQuery • GA4 • GAM • Looker Studio • Power BI</span>
-        <h1>Turning sales data into <span>profit decisions</span>.</h1>
-        <p class="lead">I'm <strong>Rizwan Baig</strong> — <strong>Data Analyst at DataBeat (Client: TIME)</strong>, Hyderabad. 1+ year building the analytics reporting stack: <strong>BigQuery, advanced SQL, GA4, GAM & Looker Studio</strong> — ETL pipelines, automated reporting & query optimization.</p>
-        <div class="hero-actions">
-          <a href="#projects" class="btn-primary-pro"><i class="fa-solid fa-border-all"></i> Explore Projects</a>
-          <a href="https://drive.google.com/uc?export=download&id=1IJpdyp8raIT2Bq-X567glrR4Uj1juJTe" class="btn-secondary-pro"><i class="fa-solid fa-file-arrow-down"></i> Download Resume</a>
-          <a href="https://www.linkedin.com/in/rizwanbaig001/" target="_blank" rel="noopener" class="btn-secondary-pro" style="padding:12px 16px;"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
-        </div>
-        <div class="hero-services" style="display:grid; grid-template-columns: repeat(3,1fr); gap:10px; padding-top:18px; border-top:1px solid var(--border);">
-          <div style="background:white; border:1px solid var(--border); border-radius:12px; padding:12px;">
-            <div style="font-size:10px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:var(--muted);">01 — GAM Forecasting</div>
-            <div style="font-size:12.5px; font-weight:700; color:var(--navy); margin:5px 0 4px;">Automated Inventory Pipeline</div>
-            <div style="font-size:11.5px; color:var(--muted); line-height:1.5;">Replaced manual GAM reporting → production (DataBeat/TIME).</div>
-          </div>
-          <div style="background:white; border:1px solid var(--border); border-radius:12px; padding:12px;">
-            <div style="font-size:10px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:var(--muted);">02 — GA4 ↔ GAM ↔ BQ</div>
-            <div style="font-size:12.5px; font-weight:700; color:var(--navy); margin:5px 0 4px;">Reconciliation & QA</div>
-            <div style="font-size:11.5px; color:var(--muted); line-height:1.5;">Fix reporting gaps across GA4, GAM, BigQuery — Python checks.</div>
-          </div>
-          <div style="background:white; border:1px solid var(--border); border-radius:12px; padding:12px;">
-            <div style="font-size:10px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:var(--muted);">03 — BigQuery Cost</div>
-            <div style="font-size:12.5px; font-weight:700; color:var(--navy); margin:5px 0 4px;">Partitioning & Tuning</div>
-            <div style="font-size:11.5px; color:var(--muted); line-height:1.5;">CTE refactor + clustering. Lower cost, faster dashboards.</div>
-          </div>
-        </div>
-        <style>@media(max-width: 700px){ .hero-services{ grid-template-columns:1fr !important; } }</style>
-      </div>
+  <main id="main">
+    <section class="hero container" id="top">
+      <p class="availability"><span></span> Available for selective freelance, remote & part-time data projects</p>
+      <h1>Data Analyst building<br><em>reliable data systems.</em></h1>
+      <p class="hero-copy">I’m Rizwan Baig, a Data Analyst at DataBeat supporting a major digital media client. I build production data pipelines, trusted reporting, and analytics workflows that help teams make better decisions.</p>
+      <div class="hero-actions"><a class="button primary" href="#experience">View experience</a><a class="button secondary" href="https://www.linkedin.com/in/rizwanbaig001/" target="_blank" rel="noopener">LinkedIn <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+      <div class="hero-meta"><span>Hyderabad, India</span><span>DataBeat · Jun 2025–Present</span><span>BigQuery · SQL · GA4 · GAM</span></div>
+    </section>
 
-      <div class="hero-preview reveal in" style="transition-delay:.08s">
-        <div class="preview-bar">
-          <span class="dot" style="background:#ef4444"></span><span class="dot" style="background:#f59e0b"></span><span class="dot" style="background:#22c55e"></span>
-          <span style="margin-left:8px; font-size:12px; font-weight:600; color:var(--muted);">sales-profit-dashboard.pbix — Overview</span>
-          <span style="margin-left:auto; font-size:10px; font-weight:600; letter-spacing:.06em; text-transform:uppercase; color:var(--muted); background:white; border:1px solid var(--border); padding:4px 8px; border-radius:999px;">Case Study • View</span>
-        </div>
-        <img class="preview-img" src="images/proj_3.jpg" alt="Sales & Profit Dashboard preview — Power BI (replace with GIF after publish)" loading="eager" style="opacity:.98;">
-        <div class="floating-kpi" style="left:10px; bottom:10px; padding:8px 10px; gap:8px; max-width: 200px; border-radius:10px;">
-          <div class="kpi-icon" style="width:28px; height:28px; border-radius:6px; font-size:12px;"><i class="fa-solid fa-play"></i></div>
-          <div>
-            <div class="kpi-value mono" style="font-size:12px;">Play 18s demo</div>
-            <div class="kpi-sub" style="font-size:10px;">GIF after Publish to Web →</div>
-          </div>
+    <section class="section section-tint" id="experience">
+      <div class="container two-column">
+        <div><p class="eyebrow">Experience</p><h2>Production analytics, not just dashboards.</h2></div>
+        <div class="experience-list">
+          <article class="experience-current"><p class="date">JUN 2025 — PRESENT</p><h3>Data Analyst <span>· DataBeat</span></h3><p class="context">Hyderabad · Client: TIME</p><ul><li>Designed and delivered an automated GAM inventory-forecasting pipeline, replacing manual reporting.</li><li>Own dashboards, BigQuery datasets, and ETL pipelines from development and QA through deployment and monitoring.</li><li>Build production SQL across Bronze/Silver/Gold data layers and resolve reporting discrepancies across GA4, GAM, and BigQuery.</li><li>Improve BigQuery cost and performance with partitioning, clustering, and CTE refactoring.</li></ul><p class="current-focus"><strong>Current focus:</strong> BigQuery pipelines, GAM forecasting, data quality, and reporting automation.</p></article>
+          <article><p class="date">DEC 2024 — 2025</p><h3>Data Researcher Intern <span>· Collegedunia</span></h3><p class="context">Remote</p><ul><li>Created structured LaTeX solution PDFs with AI-assisted tools for clear, accurate delivery.</li><li>Researched and validated educational data to 95% accuracy.</li><li>Collaborated across research workflows to deliver quality work on time.</li></ul></article>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ABOUT -->
-  <section class="pro-section" id="about">
-    <div class="container-pro">
-      <div class="about-grid">
-        <div class="about-card reveal">
-          <img class="avatar" src="images/about-me.png" alt="Rizwan Baig portrait">
-          <div class="about-meta">
-            <div class="meta-row"><span class="meta-k">Role</span><span class="meta-v">Data Analyst — DataBeat (TIME)</span></div>
-            <div class="meta-row"><span class="meta-k">Location</span><span class="meta-v">Hyderabad, India</span></div>
-            <div class="meta-row"><span class="meta-k">Experience</span><span class="meta-v">2025–Present • DataBeat • 1+ yr prod</span></div>
-            <div class="meta-row"><span class="meta-k">Education</span><span class="meta-v">BTech CSE & Design — SMEC (2021–2025)</span></div>
-          </div>
-          <div style="margin-top:16px; display:flex; gap:8px;">
-            <a href="mailto:rizwanmirza95551@gmail.com" class="btn-secondary-pro" style="flex:1; justify-content:center; padding:10px 12px; font-size:13px;"><i class="fa-solid fa-envelope"></i> Email</a>
-            <a href="https://github.com/rizz1406" target="_blank" rel="noopener" class="btn-secondary-pro" style="flex:1; justify-content:center; padding:10px 12px; font-size:13px;"><i class="fa-brands fa-github"></i> GitHub</a>
-          </div>
-        </div>
+    <section class="section" id="skills">
+      <div class="container"><p class="eyebrow">Core skills</p><h2 class="section-title">The tools and practices I use to build trustworthy reporting.</h2><div class="skills-grid">
+        <article><i class="fa-solid fa-database"></i><h3>Data Engineering</h3><p>ETL pipelines, data modelling, BigQuery datasets, Bronze/Silver/Gold architecture, partitioning, clustering, and monitoring.</p></article>
+        <article><i class="fa-solid fa-code"></i><h3>Analytics Engineering</h3><p>Advanced SQL, window functions, CTEs, data reconciliation, data quality checks, and query optimisation.</p></article>
+        <article><i class="fa-solid fa-chart-simple"></i><h3>Digital Analytics & AdTech</h3><p>GA4, Google Ad Manager, Parse.ly, Marfeel, inventory forecasting, and reporting validation.</p></article>
+        <article><i class="fa-solid fa-chart-column"></i><h3>Business Intelligence</h3><p>Looker Studio, Power BI, Excel, Google Sheets, Python automation, API integration, and AI-assisted QA.</p></article>
+      </div></div>
+    </section>
 
-        <div class="reveal" style="transition-delay:.06s">
-          <div class="kicker" style="margin-bottom:8px;">About</div>
-          <h2 style="font-size:28px; font-weight:800; letter-spacing:-.02em; color:var(--navy); margin-bottom:12px;">Data Analyst — production reporting stack.</h2>
-          <div class="prose">
-            <p>Data Analyst with 1+ year of production experience building and owning the analytics reporting stack for a major digital media client. Skilled in <strong>BigQuery, advanced SQL, GA4, GAM, and Looker Studio</strong>, with hands-on delivery of <strong>end-to-end ETL pipelines, automated reporting, and query optimization</strong>.</p>
-            <p>At <strong>DataBeat (Client: TIME)</strong> I own dashboards, BigQuery datasets and pipelines (Bronze/Silver/Gold) across dev → QA → deploy → monitor. Also built <a href="projects/sales-profit-dashboard/" style="font-weight:600;">Sales & Profit Analytics Dashboard</a> as flagship BI case study.</p>
-          </div>
+    <section class="platform-stack" aria-labelledby="platform-stack-heading">
+      <div class="container"><p class="eyebrow" id="platform-stack-heading">Platform stack</p><div class="logo-row">
+        <div title="Google Cloud & BigQuery"><img src="https://cdn.simpleicons.org/googlecloud/4285F4" alt="Google Cloud"><span>BigQuery / GCP</span></div>
+        <div title="Google Analytics 4"><img src="https://cdn.simpleicons.org/googleanalytics/E37400" alt="Google Analytics"><span>Google Analytics 4</span></div>
+        <div title="Google Ad Manager"><img src="https://cdn.simpleicons.org/googleadmanager/4285F4" alt="Google Ad Manager"><span>Google Ad Manager</span></div>
+        <div title="Looker Studio"><img src="https://cdn.simpleicons.org/looker/4285F4" alt="Looker"><span>Looker Studio</span></div>
+        <div title="Python"><img src="https://cdn.simpleicons.org/python/3776AB" alt="Python"><span>Python</span></div>
+        <div title="Databricks"><img src="https://cdn.simpleicons.org/databricks/FF3621" alt="Databricks"><span>Databricks</span></div>
+        <div title="Power BI"><img src="https://cdn.simpleicons.org/powerbi/F2C811" alt="Power BI"><span>Power BI</span></div>
+      </div></div>
+    </section>
 
-          <div style="margin-top:22px;">
-            <div style="font-size:12px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); margin-bottom:10px;">Core Stack — per resume</div>
-            <div class="pill-row">
-              <span class="pill accent"><i class="fa-solid fa-database"></i> BigQuery • Window, CTEs, Partitioning</span>
-              <span class="pill accent"><i class="fa-solid fa-chart-column"></i> GA4 • GAM • Parse.ly • Marfeel</span>
-              <span class="pill"><i class="fa-solid fa-chart-line"></i> Looker Studio • Power BI • Excel</span>
-              <span class="pill"><i class="fa-brands fa-python"></i> Python — API, QA automation</span>
-              <span class="pill"><i class="fa-solid fa-cloud"></i> GCP • ETL • QA • Monitoring</span>
-            </div>
-          </div>
+    <section class="section section-tint" id="work">
+      <div class="container"><p class="eyebrow">Selected production work</p><h2 class="section-title">How I contribute to reliable analytics.</h2><div class="work-list">
+        <article><span>01</span><div><h3>Automated GAM inventory forecasting</h3><p>Delivered a production workflow that replaced manual inventory reporting with a repeatable forecast pipeline.</p></div><p class="tools">GAM · BigQuery · SQL · Automation</p></article>
+        <article><span>02</span><div><h3>Analytics platform ownership</h3><p>Built and maintained reporting dashboards, datasets, and ETL workflows through the full development lifecycle.</p></div><p class="tools">ETL · GCP · Looker Studio · DWH</p></article>
+        <article><span>03</span><div><h3>Cross-platform data reconciliation</h3><p>Investigated and corrected reporting differences across GA4, GAM, Parse.ly, and BigQuery using SQL and QA automation.</p></div><p class="tools">GA4 · GAM · Python · Data QA</p></article>
+        <article><span>04</span><div><h3>BigQuery optimisation</h3><p>Improved query efficiency and cost control with partitioning, clustering, and refactored SQL.</p></div><p class="tools">BigQuery · SQL · Performance</p></article>
+      </div><p class="note"><i class="fa-solid fa-lock"></i> Examples describe my delivery and methods while respecting client confidentiality.</p></div>
+    </section>
 
-          <div style="margin-top:22px; display:grid; grid-template-columns: 1fr 1fr; gap:12px;">
-            <div style="background:white; border:1px solid var(--border); border-radius:12px; padding:14px;">
-              <div style="font-size:12px; font-weight:700; color:var(--muted); letter-spacing:.06em; text-transform:uppercase;">Focus</div>
-              <div style="font-size:13px; font-weight:600; color:var(--text); margin-top:4px;">ETL, Reporting, Inventory Forecasting (GAM)</div>
-            </div>
-            <div style="background:white; border:1px solid var(--border); border-radius:12px; padding:14px;">
-              <div style="font-size:12px; font-weight:700; color:var(--muted); letter-spacing:.06em; text-transform:uppercase;">Practices</div>
-              <div style="font-size:13px; font-weight:600; color:var(--text); margin-top:4px;">DWH modeling, Cost optimization, AI workflows</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    <section class="section" id="credentials">
+      <div class="container"><p class="eyebrow">Credentials</p><h2 class="section-title">Industry learning, verified.</h2><div class="credential-grid">
+        <a class="credential-card" href="https://skillshop.credential.net/c2c7578c-dc32-4b31-8ff0-8d58fc3fed59#acc.NsFWmVTl" target="_blank" rel="noopener" aria-label="View Google Ad Manager credential"><span class="credential-logo google-logo"><img src="https://cdn.simpleicons.org/google/4285F4" alt="Google logo"></span><span class="credential-copy"><small>Google Skillshop</small><strong>Drive Advertising Revenue with Google Ad Manager</strong><em>Completed July 18, 2025</em></span><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        <a class="credential-card" href="https://credentials.databricks.com/ee9ab034-f9b9-4f25-ae76-005981614c88#acc.IYhsuiRg" target="_blank" rel="noopener" aria-label="View Databricks certification"><span class="credential-logo databricks-logo"><img src="https://cdn.simpleicons.org/databricks/FF3621" alt="Databricks logo"></span><span class="credential-copy"><small>Databricks Certification</small><strong>Databricks Certified Data Engineer Associate</strong><em>View verified certification</em></span><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      </div></div>
+    </section>
 
-  <!-- EXPERIENCE + EDUCATION -->
-  <section class="pro-section alt" id="experience">
-    <div class="container-pro">
-      <div class="section-head left reveal">
-        <div class="kicker">Experience & Education</div>
-        <h2 style="text-align:left;">Where I've learned and shipped.</h2>
-      </div>
+    <section class="section section-tint" id="projects">
+      <div class="container"><p class="eyebrow">Independent projects</p><h2 class="section-title">I also build and ship useful products.</h2><p class="section-intro">Outside my analytics work, I take product ideas from concept to production.</p><div class="project-grid">
+        <a href="https://resume-tailor.vercel.app/" target="_blank" rel="noopener"><span>01</span><h3>ResumeAI — Resume Tailor</h3><p>Tailors résumés to a job description and generates an ATS-focused PDF using Claude AI.</p><em>Next.js · Claude AI</em><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        <a href="https://pulse-v24w.onrender.com" target="_blank" rel="noopener"><span>02</span><h3>Pulse — Health Tracker</h3><p>A private dashboard for logging and monitoring daily health metrics in one place.</p><em>Health · Web App</em><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        <a href="https://dopamine.rizwanmirza95551.workers.dev/" target="_blank" rel="noopener"><span>03</span><h3>Dopamine — Daily Arcade</h3><p>A collection of seven daily mini-games, built for quick play without an account.</p><em>Game · Web App</em><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      </div></div>
+    </section>
 
-      <div class="timeline reveal">
-        <div class="timeline-card featured">
-          <div class="date">2025 — Present • Hyderabad (Client: TIME)</div>
-          <h3>Data Analyst</h3>
-          <div class="org">DataBeat</div>
-          <ul>
-            <li>Designed and delivered an end-to-end <strong>automated inventory-forecasting pipeline</strong> (GAM), replacing manual reporting and putting it into production.</li>
-            <li>Owned client reporting <strong>dashboards, BigQuery datasets, and ETL pipelines</strong> through full lifecycle — dev, QA, deploy, monitoring — with no escalation for routine work.</li>
-            <li>Built <strong>production-ready SQL</strong> across multi-layer DWH (Bronze/Silver/Gold); resolved discrepancies across <strong>GA4, GAM, BigQuery</strong>.</li>
-            <li><strong>SQL & query optimization</strong> via partitioning, clustering, CTE refactoring — lower cost & faster execution.</li>
-            <li>Regular <strong>data QA</strong> across GA, Parse.ly, GAM, BigQuery; <strong>Python + AI tooling</strong> for automation.</li>
-          </ul>
-        </div>
-        <div class="timeline-card">
-          <div class="date">Dec 2024 — 2025 • Remote</div>
-          <h3>Data Researcher Intern</h3>
-          <div class="org">Collegedunia</div>
-          <ul>
-            <li>Built solution PDFs using <strong>LaTeX</strong> + AI tools; validated educational data at <strong>95% accuracy</strong>.</li>
-            <li>Researched educational data cross-functionally to meet deadlines.</li>
-          </ul>
-        </div>
-      </div>
+    <section class="section" id="education">
+      <div class="container two-column compact"><div><p class="eyebrow">Education</p><h2>Built on a technical foundation.</h2></div><div class="education-list"><article><p>2021 — 2025</p><h3>BTech, Computer Science & Design</h3><span>St. Martin’s Engineering College, Hyderabad</span><strong>CGPA 7.0</strong></article><article><p>2019 — 2021</p><h3>Intermediate (MPC)</h3><span>Sri Chaitanya Junior College, Hyderabad</span><strong>94%</strong></article><article><p>2014 — 2019</p><h3>Secondary School Certificate</h3><span>Sadhana High School, Hyderabad</span><strong>CGPA 9.8</strong></article></div></div>
+    </section>
 
-      <div class="edu-grid reveal">
-        <div class="edu-card">
-          <div class="edu-date">2021 — 2025</div>
-          <h4>BTech in Computer Science & Design</h4>
-          <div class="edu-org">St. Martin's Engineering College, Hyderabad</div>
-          <div style="margin-top:8px; font-size:11px; color:var(--muted);">Accenture Data Analytics • Cisco Data Analytics Essentials • PwC Power BI — <em>Feb 2025</em></div>
-        </div>
-        <div class="edu-card">
-          <div class="edu-date">2019 — 2021</div>
-          <h4>Intermediate (MPC) — 94%</h4>
-          <div class="edu-org">Sri Chaitanya Junior College, Chintal, Hyderabad</div>
-        </div>
-        <div class="edu-card">
-          <div class="edu-date">2014 — 2019</div>
-          <h4>Schooling (SSC) — CGPA 9.8</h4>
-          <div class="edu-org">Sadhana High School, Gajularamaram, Hyderabad</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROJECTS -->
-  <section class="pro-section" id="projects">
-    <div class="container-pro">
-      <div class="section-head reveal">
-        <div class="kicker">Projects</div>
-        <h2>Decision-ready dashboards, not just charts.</h2>
-        <p>Each project is documented end-to-end: problem → data → SQL/DAX → dashboard → insights → recommendations. Featured first.</p>
-      </div>
-
-      <div class="project-grid">
-        <!-- Featured: Sales & Profit -->
-        <article class="pro-card featured reveal">
-          <div class="pro-card-media">
-            <span class="badge-featured">Featured • NEW</span>
-            <img src="images/proj_3.jpg" alt="Sales & Profit Analytics Dashboard — Power BI" loading="lazy">
-          </div>
-          <div class="pro-card-body">
-            <div class="pro-tags">
-              <span class="tag dark">SQL</span><span class="tag">Power BI</span><span class="tag">DAX</span><span class="tag">Dec 2024</span>
-            </div>
-            <h3><a href="projects/sales-profit-dashboard/">Superstore Sales Analysis and Forecasting</a></h3>
-            <p>Resume flagship — analyzed sales with <strong>SQL</strong>, built <strong>Power BI</strong> dashboards & 15-day forecast for inventory planning. Expanded as <strong>Sales & Profit case study</strong> (star schema, 12 DAX, YoY).</p>
-            <div class="pro-actions">
-              <a href="projects/sales-profit-dashboard/" class="primary">Case Study</a>
-              <a href="https://github.com/rizz1406/Superstore-Sales-Analysis" target="_blank" rel="noopener">GitHub</a>
-            </div>
-          </div>
-        </article>
-
-        <!-- Galaxy Store -->
-        <article class="pro-card reveal" style="transition-delay:.08s">
-          <div class="pro-card-media">
-            <img src="images/proj_2.jpg" alt="My Galaxy Store Sales Analysis — Excel" loading="lazy">
-          </div>
-          <div class="pro-card-body">
-            <div class="pro-tags"><span class="tag dark">Excel</span><span class="tag">PivotTables</span><span class="tag">Charts</span></div>
-            <h3><a href="https://github.com/rizz1406/My-Galaxy-Store-Sales-Analysis" target="_blank" rel="noopener">My Galaxy Store Sales Analysis</a></h3>
-            <p>Excel-driven profitability story — pivot models + charts that translate store sales into actionable pricing and stock decisions.</p>
-            <div class="pro-actions">
-              <a href="https://github.com/rizz1406/My-Galaxy-Store-Sales-Analysis" target="_blank" rel="noopener" class="primary">GitHub</a>
-              <a href="https://github.com/rizz1406/My-Galaxy-Store-Sales-Analysis" target="_blank" rel="noopener">Workbook</a>
-            </div>
-          </div>
-        </article>
-
-
-      </div>
-
-      <div class="stats-strip reveal" style="margin-top:28px;">
-        <div class="stat"><div class="stat-num mono">1+ yr</div><div class="stat-label">DataBeat (TIME) — Production</div></div>
-        <div class="stat"><div class="stat-num mono">2</div><div class="stat-label">Projects — Superstore + Galaxy</div></div>
-        <div class="stat"><div class="stat-num mono">BigQuery</div><div class="stat-label">GA4 • GAM • Looker Studio</div></div>
-        <div class="stat"><div class="stat-num mono">B.Tech</div><div class="stat-label">CSE & Design • SMEC</div></div>
-      </div>
-
-      <div style="text-align:center; margin-top:22px;" class="reveal">
-        <a href="https://github.com/rizz1406" target="_blank" rel="noopener" class="btn-secondary-pro" style="border-radius:999px;"><i class="fa-brands fa-github"></i> Explore GitHub — github.com/rizz1406</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- PRODUCTS -->
-  <section class="pro-section alt" id="products">
-    <div class="container-pro">
-      <div class="section-head reveal">
-        <div class="kicker">Products</div>
-        <h2>Solo-built, shipped end-to-end.</h2>
-        <p>Outside the day job, I design, build, and ship real software products using AI-assisted development — idea to production, alone.</p>
-      </div>
-
-      <div class="project-grid">
-        <!-- Resume Tailor -->
-        <article class="pro-card reveal">
-          <div class="pro-card-body">
-            <div class="pro-tags"><span class="tag dark">Next.js</span><span class="tag">Claude AI</span><span class="tag">SaaS</span></div>
-            <h3><a href="https://resume-tailor.vercel.app/" target="_blank" rel="noopener">ResumeAI — Resume Tailor</a></h3>
-            <p>Paste a job description, get a perfectly tailored, ATS-optimized PDF resume in seconds — powered by Claude AI.</p>
-            <div class="pro-actions">
-              <a href="https://resume-tailor.vercel.app/" target="_blank" rel="noopener" class="primary">Try it live</a>
-            </div>
-          </div>
-        </article>
-
-        <!-- Pulse -->
-        <article class="pro-card reveal" style="transition-delay:.08s">
-          <div class="pro-card-body">
-            <div class="pro-tags"><span class="tag dark">Health</span><span class="tag">Web app</span></div>
-            <h3><a href="https://pulse-v24w.onrender.com" target="_blank" rel="noopener">Pulse — Health Tracker</a></h3>
-            <p>A private, personal health tracker — log and monitor daily health metrics in one clean dashboard.</p>
-            <div class="pro-actions">
-              <a href="https://pulse-v24w.onrender.com" target="_blank" rel="noopener" class="primary">Try it live</a>
-            </div>
-          </div>
-        </article>
-
-        <!-- Dopamine -->
-        <article class="pro-card reveal" style="transition-delay:.16s">
-          <div class="pro-card-body">
-            <div class="pro-tags"><span class="tag dark">Game</span><span class="tag">Ad-monetized</span><span class="tag">No login</span></div>
-            <h3><a href="https://dopamine.rizwanmirza95551.workers.dev/" target="_blank" rel="noopener">Dopamine — Daily Arcade</a></h3>
-            <p>7 addictive mini-games — guess movies from emojis, word puzzles, flag quizzes, reaction tests and more. New puzzles daily, no login required.</p>
-            <div class="pro-actions">
-              <a href="https://dopamine.rizwanmirza95551.workers.dev/" target="_blank" rel="noopener" class="primary">Try it live</a>
-            </div>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section class="pro-section alt" id="contact">
-    <div class="container-pro">
-      <div class="section-head reveal">
-        <div class="kicker">Contact</div>
-        <h2>Let's build something useful.</h2>
-        <p>Open to Data Analyst / BI roles and freelance dashboard work. Fastest response is email or LinkedIn.</p>
-      </div>
-
-      <div class="contact-grid reveal">
-        <div class="contact-card">
-          <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
-          <h4>Location</h4>
-          <p>Hyderabad, India</p>
-        </div>
-        <div class="contact-card">
-          <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
-          <h4>Phone</h4>
-          <p><a href="tel:+918096863836">+91 8096863836</a></p>
-        </div>
-        <div class="contact-card">
-          <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
-          <h4>Email</h4>
-          <p><a href="mailto:rizwanmirza95551@gmail.com">rizwanmirza95551@gmail.com</a></p>
-        </div>
-        <div class="contact-card">
-          <div class="contact-icon"><i class="fa-solid fa-file-arrow-down"></i></div>
-          <h4>Resume</h4>
-          <p><a href="https://drive.google.com/uc?export=download&id=1IJpdyp8raIT2Bq-X567glrR4Uj1juJTe">Download PDF</a></p>
-        </div>
-      </div>
-
-      <div style="text-align:center; margin-top:24px;" class="reveal">
-        <a href="https://www.linkedin.com/in/rizwanbaig001/" target="_blank" rel="noopener" class="btn-primary-pro" style="border-radius:999px; padding:14px 22px;">Connect on LinkedIn <i class="fa-solid fa-arrow-up-right-from-square" style="font-size:12px;"></i></a>
-      </div>
-    </div>
-  </section>
-
-  <footer class="pro-footer">
-    <div class="footer-inner">
-      <p>© <span id="year"></span> Rizwan Baig. Built for Business Intelligence — Power BI • SQL • Python.</p>
-      <div class="socials">
-        <a href="https://www.linkedin.com/in/rizwanbaig001/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-        <a href="https://github.com/rizz1406" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-        <a href="https://www.instagram.com/rizwan_since_2002" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-      </div>
-    </div>
-  </footer>
-
+    <section class="contact" id="contact"><div class="container"><p class="eyebrow">Contact</p><h2>Let’s build something useful.</h2><p>Available for selective freelance, remote, and part-time Data Analyst, BI, and analytics engineering projects.</p><div class="contact-actions"><a class="button primary" href="mailto:rizwanmirza95551@gmail.com"><i class="fa-solid fa-envelope"></i> Email me</a><a class="button secondary" href="https://github.com/rizz1406" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a><a class="button secondary" href="https://www.linkedin.com/in/rizwanbaig001/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></div></div></section>
+  </main>
+  <footer><div class="container"><span>© <span id="year"></span> Rizwan Baig</span><span>Data Analyst · Hyderabad, India</span></div></footer>
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
-    const btn = document.getElementById('menuBtn');
-    const nav = document.querySelector('.pro-nav');
-    const links = document.getElementById('navLinks');
-    if(btn){
-      btn.addEventListener('click', ()=> nav.classList.toggle('open'));
-      links.querySelectorAll('a').forEach(a=> a.addEventListener('click', ()=> nav.classList.remove('open')));
-    }
-    // active link on scroll
-    const sections = ['about','experience','projects','contact'].map(id=> document.getElementById(id));
-    const navAs = [...document.querySelectorAll('.pro-nav .nav-links a')];
-    const obs = new IntersectionObserver(entries=>{
-      entries.forEach(e=>{
-        if(e.isIntersecting){
-          navAs.forEach(a=> a.classList.toggle('active', a.getAttribute('href') === '#'+e.target.id));
-        }
-      });
-    }, { rootMargin: '-45% 0px -50% 0px', threshold:0 });
-    sections.forEach(s=> s && obs.observe(s));
-    // reveal
-    const reveals = document.querySelectorAll('.reveal');
-    const ro = new IntersectionObserver(es=>{
-      es.forEach(en=> { if(en.isIntersecting){ en.target.classList.add('in'); ro.unobserve(en.target);} });
-    }, { threshold:.12 });
-    reveals.forEach(r=> ro.observe(r));
-    // smooth scroll (fallback)
-    document.querySelectorAll('a[href^="#"]').forEach(a=>{
-      a.addEventListener('click', e=>{
-        const id = a.getAttribute('href');
-        if(id.length>1){
-          const el = document.querySelector(id);
-          if(el){ e.preventDefault(); el.scrollIntoView({behavior:'smooth', block:'start'}); history.pushState(null,null,id); }
-        }
-      });
-    });
+    const toggle = document.querySelector('.menu-toggle'); const links = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => { const open = links.classList.toggle('open'); toggle.setAttribute('aria-expanded', open); });
+    links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { links.classList.remove('open'); toggle.setAttribute('aria-expanded', 'false'); }));
+    const motionTargets = document.querySelectorAll('.section > .container, .contact > .container');
+    const revealObserver = new IntersectionObserver(entries => entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('is-visible'); revealObserver.unobserve(entry.target); } }), { threshold: .12 });
+    motionTargets.forEach(target => { target.classList.add('motion-reveal'); revealObserver.observe(target); });
+    const navItems = [...document.querySelectorAll('.nav-links a[href^="#"]')];
+    const sections = [...document.querySelectorAll('main section[id]')];
+    const navObserver = new IntersectionObserver(entries => entries.forEach(entry => { if (entry.isIntersecting) navItems.forEach(link => link.classList.toggle('active', link.getAttribute('href') === '#' + entry.target.id)); }), { rootMargin: '-35% 0px -58% 0px', threshold: 0 });
+    sections.forEach(section => navObserver.observe(section));
   </script>
 </body>
 </html>

@@ -27,7 +27,7 @@ def section(title):
 
 story = [
     p("Rizwan Baig", "Name"),
-    p("Data Analyst | Hyderabad, India", "Subtitle"),
+    p("Data Analyst | Hyderabad, India | 8096863836", "Subtitle"),
     p("rizwanmirza95551@gmail.com &nbsp; | &nbsp; linkedin.com/in/rizwanbaig001 &nbsp; | &nbsp; github.com/rizz1406 &nbsp; | &nbsp; rizz1406.github.io", "Subtitle"),
 ]
 story += section("Summary")

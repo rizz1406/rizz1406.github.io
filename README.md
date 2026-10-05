@@ -27,7 +27,7 @@ Data Analyst at **DataBeat**, supporting a major digital media client from Hyder
 ## Résumé
 
 - [Download PDF](resume/rizwan-baig-resume.pdf)
-- [Editable LaTeX source](resume/rizwan-baig-resume.tex)
+- [Editable LaTeX source](resume/main.tex) and [template class](resume/resume.cls)
 
 ## Run locally
 
